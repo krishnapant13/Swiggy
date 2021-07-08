@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="swiggy.css"/>
+  <title>Assigment</title>
+  <style type="text/css">
+    .slideshow {
+      margin:auto;
+      padding-top: 10px;
+      height: 200px;
+      width: 1200px;
+      background-image: url(sww.png);
+
+      box-sizing: border-box;
+    }
+    .content {
+      margin: auto;
+      width: 180px;
+      perspective: 1100px;
+      position: relative;
+      padding-top:5px;
+
+    }
+    .content-carrousel {
+      width: 100%;
+      position: absolute;
+      float:right;
+      animation: rotar 15s infinite linear;
+      transform-style: preserve-3d;
+    }
+    .content-carrousel:hover{
+      animation-play-state: paused;
+      cursor: pointer;
+    }
+
+    .content-carrousel figure {
+      width: 100%;
+      height: 120px;
+      border: 1px solid #4d444d;
+      position: absolute;
+    }
+    .content-carrousel figure:nth-child(1) {
+      transform: rotateY(0deg) translateZ(300px);
+    }
+    .content-carrousel figure:nth-child(2) {
+      transform: rotateY(40deg) translateZ(300px);
+    }
+
+    .content-carrousel figure:nth-child(3) {
+      transform: rotateY(80deg) translateZ(300px);
+    }
+    .content-carrousel figure:nth-child(4) {
+      transform: rotateY(120deg) translateZ(300px);
+      }
+
+    .content-carrousel figure:nth-child(5) {
+      transform: rotateY(160deg) translateZ(300px);
+      }
+    .content-carrousel figure:nth-child(6) {
+      transform: rotateY(200deg) translateZ(300px);
+      }
+    .content-carrousel figure:nth-child(7) {
+      transform: rotateY(240deg) translateZ(300px);
+      }
+    .content-carrousel figure:nth-child(8) {
+      transform: rotateY(280deg) translateZ(300px);
+      }
+    .content-carrousel figure:nth-child(9) {
+      transform: rotateY(320deg) translateZ(300px);
+      }
+      .shadow {
+        position: absolute;
+        box-shadow: 0px 0px 20px 0px #000;
+        border-radius: 2px;
+      }
+      .content-carrousel img{
+        image-rendering: auto;
+        transition: all 300ms;
+        width: 100%;
+        height: 100%;
+      }
+      .content-carrousel img:hover{
+        transform: scale(1.2);
+        transition: all 300ms;
+      }
+      @keyframes rotar{
+        from{
+          transform: rotateY(0deg);
+        }to {
+          transform: rotateY(360deg);
+        }
+      }
+      body {
+  margin-top: 
+  padding:10;
+  font-family: Tempus Sans ITC;
+ }
+ul
+{
+  position:fixed;
+  top:50%;
+  left: 0;
+  transform: translateY(-50);
+  margin: 0;
+  padding:0;
+  z-index: 1; 
+}
+ul li
+{
+  list-style: none;
+
+}
+#container
+{
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+#container div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#container div h1 {
+  position: absolute;
+  top:50;
+  left: 0;
+  transform: translateY(-50);
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  display: block;
+  text-decoration:blink;
+  height: 30px;
+  line-height: 30px;
+  font-size: 24px;
+  font-style: bold;
+  background:#177CCB;
+  width: 250px;
+  margin: 4px 0;
+  padding-left:15px;
+  text-transform: uppercase;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  opacity: 10px;
+  }
+ul li a:hover{
+  background: #B912CA;
+}
+#container div#PopularBrands
+{
+  background: #72F3B7;
+}
+#container div#FreeDelivery
+{
+  background: #E0CB14;
+}#container div#OffersAroundYou
+{
+  background: #4CE014;
+}#container div#ExpressDelivery
+{
+  background: #148DE0;
+}#container div#Vegitarian
+{
+  background: #BE14E0;
+}#container div#PocketFriendly
+{
+  background: #E01461;
+}
+
+#footer {
+  position: fixed;
+  left:0px;
+  bottom:0px;
+  height:200px;
+  width: 100%;
+  background:Green;
+
+}
+    </style>
+  </head>
+  <body>
+  <div class="header" id="myHeader">
+  <CENTER> <img src="images/swiggy.png"></CENTER>
+  </div>
+  </br>
+</br>
+<section class="slideshow">
+  <div class="content">
+    <div class="content-carrousel">
+      <figure class="shadow"><img src="images/img6.jpg" height="150" width="200"></figure>
+      <figure class="shadow"><img src="images/img2.jpg" height="150" width="200"></figure>
+      <figure class="shadow"><img src="images/img3.jpg" height="150" width="200"></figure>
+      <figure class="shadow"><img src="images/img4.jpg" height="150" width="200"></figure>
+      <figure class="shadow"><img src="images/img5.jpg" height="150" width="200"></figure>
+      <figure class="shadow"><img src="images/img1.jpg" height="150" width="200"></figure>
+      <figure class="shadow"><img src="images/img7.jpg" height="150" width="200"></figure>
+      <figure class="shadow"><img src="images/img8.jpg" height="150" width="200"></figure>
+      <figure class="shadow"><img src="images/swiggy2.jpg" height="150" width="200"></figure>
+     
+    </div>
+  </div>
+
+</section>'
+<ul>
+  <li><a href="#PopularBrands">PopularBrands</a></li>
+  <li><a href="#FreeDelivery">FreeDelivery</a></li>
+  <li><a href="#OffersAroundYou">OffersAroundYou</a></li>
+  <li><a href="#ExpressDelivery">ExpressDelivery</a></li>
+  <li><a href="#Vegitarian">Vegitarian</a></li>
+  <li><a href="#PocketFriendly">PocketFriendly</a></li>
+</ul>
+<center>
+<div id="container" >
+  <div id="PopularBrands"><h1>PopularBrands</h1>
+</br></br></br></br><img src="images/s7.jpg" height="250" width="300">
+<img src="images/s8.jpg" height="250" width="300">
+<img src="images/s9.jpg" height="250" width="300">
+<img src="images/s10.jpg" height="250" width="300">
+<img src="images/s11.jpg" height="250" width="300">
+<img src="images/s12.jpg" height="250" width="300">
+</div>
+<div id="FreeDelivery"><h1>FreeDelivery</h1>
+</br></br></br></br><img src="images/s1.jpg" height="250" width="300">
+<img src="images/s2.jpg" height="250" width="300">
+<img src="images/s3.jpg" height="250" width="300">
+<img src="images/s4.jpg" height="250" width="300">
+<img src="images/s5.jpg" height="250" width="300">
+<img src="images/s6.jpg" height="250" width="300">
+</div>
+<div id="OffersAroundYou"><h1>OffersAroundYou</h1>
+</br></br></br></br><img src="images/s1.jpg" height="250" width="300">
+<img src="images/s13.jpg" height="250" width="300">
+<img src="images/s14.jpg" height="250" width="300">
+<img src="images/s15.jpg" height="250" width="300">
+<img src="images/s16.jpg" height="250" width="300">
+<img src="images/s17.jpg" height="250" width="300"></div>
+<div id="ExpressDelivery"><h1>ExpressDelivery</h1>
+</br></br></br></br>
+<img src="images/s33.jpg" height="250" width="300">
+
+<img src="images/s19.jpg" height="250" width="300">
+<img src="images/s20.jpg" height="250" width="300">
+<img src="images/s21.jpg" height="250" width="300">
+<img src="images/s22.jpg" height="250" width="300"></div>
+<div id="Vegitarian"><h1>Vegitarian</h1>
+</br></br></br></br><img src="images/s1.jpg" height="250" width="300">
+<img src="images/s23.jpg" height="250" width="300">
+<img src="images/s24.jpg" height="250" width="300">
+<img src="images/s25.jpg" height="250" width="300">
+<img src="images/s26.jpg" height="250" width="300">
+<img src="images/s27.jpg" height="250" width="300"></div>
+<div id="PocketFriendly"><h1>PocketFriendly</h1>
+</br></br></br></br><img src="images/s1.jpg" height="250" width="300">
+<img src="images/s28.jpg" height="250" width="300">
+<img src="images/s29.jpg" height="250" width="300">
+<img src="images/s30.jpg" height="250" width="300">
+<img src="images/s31.jpg" height="250" width="300">
+<img src="images/s32.jpg" height="250" width="300"></div>
+</center>
+</div>
+
+</body>
+</html>
